@@ -2,7 +2,7 @@
     "name":"Hent en hund til mig",
     "short_name":"Hent en hund",
     "description":"hent en hund app, hvor du kan se detaljer om hunden",
-    "start_url":"/index.html", 
+    "start_url":"./Boilerplate-pwa/index.html", 
     "scope":"/", 
     "background_color":"#FFFFFF",
     "theme_color":"#006400",

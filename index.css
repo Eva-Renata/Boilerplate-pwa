@@ -40,6 +40,9 @@ footer {
   position: absolute;
   bottom: 0;
 }
+footer:hover {
+  background-color: rgb(126 159 99);
+}
 footer a {
   font-size: 4vh;
   text-decoration: none;
