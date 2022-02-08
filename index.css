@@ -1,10 +1,25 @@
-body {
+body,
+html {
   height: 100%;
+  max-width: 500px;
+  margin: auto;
+  background-color: rgb(241, 241, 241);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 header {
   text-align: center;
   border-bottom: solid 1px grey;
-  background-color: rgb(233, 223, 223);
+  background-color: rgb(241, 241, 241);
+  position: relative;
+}
+header img {
+  width: 10%;
+  height: auto;
+  position: absolute;
+  top: 5px;
+  left: 10px;
 }
 main {
   text-align: center;
@@ -22,7 +37,7 @@ footer {
   width: 100%;
   text-align: center;
   border-top: solid 1px grey;
-  background-color: rgb(233, 223, 223);
+  background-color: rgb(241, 241, 241);
 }
 footer a {
   font-size: 4vh;
