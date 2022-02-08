@@ -1,10 +1,10 @@
 body,
 html {
-  height: 100vh;
+  min-height: 100vh;
   max-width: 500px;
   margin: auto;
   background-color: rgb(241, 241, 241);
-  box-sizing: border-box;
+
   position: relative;
 }
 header {
