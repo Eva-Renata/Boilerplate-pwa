@@ -6,11 +6,11 @@ if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("serviceworker.js")
 
     .then (registration => {
-        console.log("SW registered");
-        console.log(registration)
+        //console.log("SW registered");
+        //console.log(registration)
     }).catch(error => {
-        console.log("SW register failed");
-        console.log(error)
+        //console.log("SW register failed");
+       // console.log(error)
     })
 
 } else {

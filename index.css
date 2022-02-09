@@ -1,11 +1,9 @@
-body,
-html {
-  min-height: 100vh;
+body {
+  /* min-height: 100vh; */
   max-width: 500px;
   margin: auto;
   background-color: rgb(241, 241, 241);
-
-  position: relative;
+  /* position: relative; */
 }
 header {
   text-align: center;
@@ -20,6 +18,9 @@ header img {
   top: 3px;
   left: 10px;
 }
+header h1 {
+  color: darkgreen;
+}
 main {
   text-align: center;
 }
@@ -32,22 +33,25 @@ main img {
   text-decoration: underline;
 }
 footer {
-  height: 10vh;
+  height: 8vh;
   width: 100%;
   text-align: center;
-  border-top: solid 1px grey;
   background-color: rgb(241, 241, 241);
+  /* border-top: solid 1px grey;
   position: absolute;
-  bottom: 0;
+  bottom: 0; */
+  margin-top: 5vh;
+  vertical-align: middle;
+  line-height: 8vh;
 }
 footer:hover {
   background-color: rgb(126 159 99);
 }
 footer a {
-  font-size: 4vh;
+  font-size: 3vh;
   text-decoration: none;
   color: black;
-  padding: 5vh;
+  padding: 2vh;
 }
 a:hover {
   color: darkgreen;
