@@ -1,7 +1,8 @@
 const CACHE_NAME = 'my-site-cache';
 
+//hvad cacher vi
 const urlsToCache = [
-    './',
+     './',
     './index.css',
     'assets/images/icons/icon512.png',
     './index.html', 
@@ -22,8 +23,24 @@ self.addEventListener('install', function(event) {
     )
 })
 
-self.addEventListener('fetch', function(e){
-    //console.log('intercept req:' + e.request.url);
+// self.addEventListener('fetch', function(e){
+//     console.log('intercept req:' + e.request.url);
 
-    //caching strategies goes here
-})
+//     //caching strategies goes here
+// })
+
+//Stale while revalidate cache strategi implementeret
+self.addEventListener('fetch', event => {
+    event.respomdWith(
+        caches.open('my-site-cache').then(cache => {
+            return cache.match(event.request).then(response => {
+                const fetchPromise = fetch(event.request)
+                .then(networkResponse => {
+                    cache.put(event.request, networkResponse.clone());
+                    return networkResponse;
+                });
+                return response || fetchPromise;
+            });
+        }),
+    );
+});
